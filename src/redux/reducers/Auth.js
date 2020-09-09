@@ -3,7 +3,7 @@ import {
   LOGIN_FAILED,
   LOGIN_SUCCESS,
   USER_LOGGED_OUT,
-} from "../actionTypes/index";
+} from "../actionType/Auth";
 
 const initialState = {
   isLoading: false,

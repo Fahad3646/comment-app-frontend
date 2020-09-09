@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import LoginForm from "../../components/auth/login/form";
 import { LoginBanner } from "../../components/auth/login/";
 import { Row, Col } from "antd";
-import { login } from "../../redux/actions/auth";
+import { login } from "../../redux/actions/Auth";
 import { connect } from "react-redux";
 
 class Login extends Component {
@@ -13,7 +13,7 @@ class Login extends Component {
   render() {
     const {
       login,
-      auth: { isLoading }
+      auth: { isLoading },
     } = this.props;
 
     return (
@@ -29,14 +29,14 @@ class Login extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    auth: state.auth
+    auth: state.auth,
   };
 };
 
 const mapDispatchToProps = {
-  login
+  login,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);

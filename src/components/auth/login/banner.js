@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { miventureLogo } from "../../../assets/media/";
 import { Col, Row } from "antd";
 
 export default class Loginbanner extends Component {
@@ -25,7 +24,7 @@ export default class Loginbanner extends Component {
       >
         <Col span={24}>
           <div className="login__banner-logo">
-            <img src={miventureLogo} width="80%" />
+            <img alt="logo" width="80%" />
           </div>
           <div
             className="login__banner-text"
@@ -35,10 +34,10 @@ export default class Loginbanner extends Component {
               flexGrow: 1,
             }}
           >
-            Welcome to Miventure Admin Panel!
+            Welcome to Comment App!
           </div>
           <div className="login__banner-footer">
-            &copy; {new Date().getFullYear()} Miventure
+            &copy; {new Date().getFullYear()} Comment
           </div>
         </Col>
       </Row>

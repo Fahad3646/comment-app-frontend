@@ -3,7 +3,7 @@ import {
   LOGIN_FAILED,
   LOGIN_SUCCESS,
   USER_LOGGED_OUT,
-} from "../actionTypes";
+} from "../actionType/Auth";
 import AuthService from "../../services/AuthService";
 
 const loginStart = () => {

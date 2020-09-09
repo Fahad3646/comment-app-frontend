@@ -1,6 +1,6 @@
 import axios from "axios";
 import { store } from "../redux/store";
-import { logout } from "../redux/actions/auth";
+import { logout } from "../redux/actions/Auth";
 import showToast from "./show-toast";
 
 /**
