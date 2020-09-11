@@ -5,6 +5,7 @@ import {
   USER_LOGGED_OUT,
 } from "../actionType/Auth";
 import AuthService from "../../services/AuthService";
+import ShowToast from "../../utils/show-toast";
 
 const loginStart = () => {
   return { type: LOGIN_START };
@@ -31,6 +32,7 @@ export const login = (data) => async (dispatch) => {
       dispatch(loginSuccess(data));
     }
   } catch (error) {
+    ShowToast(error.response.data.message, "error");
     dispatch(loginFailed());
   }
 };

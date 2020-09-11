@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Layout, Row, Button } from "antd";
 import { LogoutOutlined } from "@ant-design/icons";
-
+import AppHeader from "./AppHeader";
 import { logout } from "../../redux/actions/Auth";
 import { connect } from "react-redux";
 
@@ -35,6 +35,7 @@ class SharedLayout extends Component {
             align: "center",
           }}
         >
+          <AppHeader />
           <Button ghost onClick={this.logout}>
             <LogoutOutlined />
             {!this.state.collapsed ? "Logout" : ""}

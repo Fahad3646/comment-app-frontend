@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import LoginForm from "../../components/auth/login/form";
-import { LoginBanner } from "../../components/auth/login/";
 import { Row, Col } from "antd";
 import { login } from "../../redux/actions/Auth";
 import { connect } from "react-redux";
@@ -18,10 +17,7 @@ class Login extends Component {
 
     return (
       <Row>
-        <Col xs={24} lg={10} md={6}>
-          <LoginBanner />
-        </Col>
-        <Col xs={24} lg={14} md={18}>
+        <Col xs={24} lg={24} md={24}>
           <LoginForm onSubmit={login} loading={isLoading} />
         </Col>
       </Row>
